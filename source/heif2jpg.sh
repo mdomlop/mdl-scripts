@@ -1,4 +1,11 @@
 #!/bin/sh
+
+### heif2jpg
+# Lossy converts heif/heic to jpeg.
+#
+# Version 1 (2024-03-??)
+# - Requires: heif-convert
+
 # Convierte heif/heic a jpg. Si la conversón es exitosa el archivo
 # original será borrado.
 # La conversión es con pérdida.
@@ -29,7 +36,7 @@ if [ -f "$args" ]
 then
 	heif-convert "$args" "$base".jpg &&
 	rm "$args"
-else 
-	echo "File not found!" 
+else
+	echo "File not found!"
 	exit 3
 fi

@@ -1,7 +1,10 @@
 #!/bin/sh
 
-# 2x265
+### 2x265
 # Convert h.264 to h.265 (no change in resolution)
+#
+# Version 1 (2023-??-??)
+# - Requires: ffmpeg
 
 # https://www.tauceti.blog/posts/linux-ffmpeg-amd-5700xt-hardware-video-encoding-hevc-h265-vaapi/
 

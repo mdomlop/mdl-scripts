@@ -1,5 +1,11 @@
 #!/bin/sh
 
+### flac_genre_add
+# Add GENRE tag to flac file.
+#
+# Version 1 (2024-03-??)
+# - Requires: metaflac
+
 # Inicializar las variables para almacenar los valores de las opciones
 valor_t=""
 valor_f=""

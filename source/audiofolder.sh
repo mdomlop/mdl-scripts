@@ -1,5 +1,11 @@
 #!/bin/sh
 
+### audiofolder
+# Rename folder by tag in a flac flacfile
+#
+# Version 1 (2023-??-??)
+# - Requires: mediainfo, opusinfo, vorbiscomment
+
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color

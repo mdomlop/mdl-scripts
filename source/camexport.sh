@@ -1,6 +1,10 @@
 #!/bin/bash
-# camformat
-# version 1
+
+### camexport
+# Move formated photo files to album directory by date.
+#
+# Version 1 (2023-03-21)
+# - Requires: nothing special
 
 defconfigfile=~/.config/exportcam
 

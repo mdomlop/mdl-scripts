@@ -1,8 +1,15 @@
 #!/bin/sh
+
+### a2jxl
 # Convierte cualquier archivo admitido por cjxl a jxl con el máximo esfuerzo.
+#
+# Version 1 (2024-03-21)
+# - Requires: cjxl
+
 # Si el formato de entrada es jpg la conversión es sin pérdida y se podría
 # recuperar el jpeg original con djxl.
-
+#
+#
 # Si quieres usar múltiples hilos con parallel:
 #   find -name *.png *.PNG *.jpg *.JPG *.jpeg *.JPEG -type f | parallel -j 16 a2jxl '{}'
 # o:

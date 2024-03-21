@@ -1,10 +1,16 @@
 #!/bin/sh
 
+### music2mobile
+# Copy my music to my mobile.
+#
+# Version 1 (2024-03-??)
+# - Requires: opusenc
+
 folderalbum="$@"
 
 encoder=opusenc
 encargs='--quiet --vbr --bitrate 192 --comp 10 --expect-loss 0'
-outputdir=/var/tmp/mdl/tmp/Movil
+outputdir=/var/tmp/mdl/Movil
 outputdir="$outputdir"/"$folderalbum"
 
 if [ -d "$folderalbum"/Tracks ]

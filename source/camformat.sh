@@ -1,6 +1,10 @@
 #!/bin/bash
-# camformat
-# version 1
+
+### camformat
+# Format photo files by date if possible.
+#
+# Version 1 (2024-03-21)
+# - Requires: exiv2
 
 # Color del texto:
 BLACKFG='\033[0;30m'

@@ -1,5 +1,10 @@
 #!/bin/sh
-# estacion: Devuelve la estación del año.
+
+### estacion
+# Devuelve la estación del año.
+#
+# Version 1 (Mucho antes de 2024-03-21)
+# - Requires: nothing special
 
 test -z $1 && S0=$(date '+%m%d') || S0=$1
 
