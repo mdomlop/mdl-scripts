@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ### a2jxl
-# Convierte cualquier archivo admitido por cjxl a jxl con el máximo esfuerzo.
+# Convert any file supported by cjxl to jxl with maximum effort.
 #
 # Version 1 (2024-03-21)
 # - Requires: cjxl
