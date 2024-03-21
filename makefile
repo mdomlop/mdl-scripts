@@ -1,6 +1,6 @@
 NAME    = mdl-scripts
-PREFIX  = /usr
-DESTDIR = 
+PREFIX  = /usr/local
+DESTDIR =
 SOURCEDIR = source
 
 SCRIPTS := $(notdir $(wildcard $(SOURCEDIR)/*.sh))
