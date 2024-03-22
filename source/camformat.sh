@@ -1,6 +1,6 @@
 #!/bin/bash
 
-### camformat
+##### camformat
 # Format photo files by date if possible.
 #
 # Version 1 (2024-03-21)

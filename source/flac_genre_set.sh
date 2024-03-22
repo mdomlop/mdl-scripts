@@ -1,6 +1,6 @@
 #!/bin/sh
 
-### flac_genre_set
+##### flac_genre_set
 # Overwrite GENRE tag(s) to flac file.
 #
 # Version 1 (2024-03-??)

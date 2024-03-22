@@ -1,6 +1,6 @@
 #!/bin/sh
 
-### flac_cover_export
+##### flac_cover_export
 # Export cover from a flac file.
 #
 # Version 1 (2024-03-??)

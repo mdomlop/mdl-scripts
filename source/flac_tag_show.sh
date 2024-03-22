@@ -1,6 +1,6 @@
 #!/bin/sh
 
-### flac_tag_showall
+##### flac_tag_showall
 # Prints all tags from a flac file. Useful for lazy people's scripts.
 #
 # Version 1 (2024-03-??)

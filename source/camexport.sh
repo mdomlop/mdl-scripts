@@ -1,6 +1,6 @@
 #!/bin/bash
 
-### camexport
+##### camexport
 # Move formated photo files to album directory by date.
 #
 # Version 1 (2023-03-21)

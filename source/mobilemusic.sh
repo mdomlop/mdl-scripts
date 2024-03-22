@@ -1,6 +1,6 @@
 #!/bin/sh
 
-### music2mobile
+##### music2mobile
 # Copy my music to my mobile.
 #
 # Version 1 (2024-03-??)

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-### flac_genre_add
+##### flac_genre_add
 # Add GENRE tag to flac file.
 #
 # Version 1 (2024-03-??)

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-### update-local-repo-arch
+##### update-local-repo-arch
 # Update my arch repository.
 #
 # Version 1 (2024-03-??)

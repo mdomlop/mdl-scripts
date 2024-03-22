@@ -1,6 +1,6 @@
 #!/bin/sh
 
-### screenshot
+##### screenshot
 # Simple screencapture tool.
 #
 # Version 1 (2024-03-16)

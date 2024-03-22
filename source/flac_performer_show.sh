@@ -1,6 +1,6 @@
 #!/bin/sh
 
-### flac_performer_show
+##### flac_performer_show
 # Prints PERFORMER tag from a flac file. Useful for lazy people's scripts.
 #
 # Version 1 (2024-03-??)

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-### audiofolder
+##### audiofolder
 # Rename folder by tag in a flac flacfile
 #
 # Version 1 (2023-??-??)

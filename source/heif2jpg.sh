@@ -1,6 +1,6 @@
 #!/bin/sh
 
-### heif2jpg
+##### heif2jpg
 # Lossy converts heif/heic to jpeg.
 #
 # Version 1 (2024-03-??)

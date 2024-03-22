@@ -1,6 +1,6 @@
 #!/bin/sh
 
-### ape2flac
+##### ape2flac
 # Converts APE to FLAC
 #
 # Version 1 (2???-??-??)
