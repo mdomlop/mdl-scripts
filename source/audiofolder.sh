@@ -3,6 +3,8 @@
 ##### audiofolder
 # Rename folder by tag in a flac flacfile
 #
+# Version 1.1 (2024-08-25)
+# - More legible format:
 # Version 1 (2023-??-??)
 # - Requires: mediainfo, opusinfo, vorbiscomment
 
@@ -165,8 +167,8 @@ fi
 
 test $rval -gt 0 && exit 1
 
-foldername1=$(echo "$year - $album ($albumartist) [$media x$disctotal] [$label] [$catalognumber] [$releasecountry]" | tr '/' '~' | tr ':' '_' | tr '\n' ' ' | awk '{$1=$1;print}')
-foldername2=$(echo "$year - $album ($artist) [$media x$disctotal] [$label] [$catalognumber] [$releasecountry]" | tr '/' '~' | tr ':' '_' | tr '\n' ' ' | awk '{$1=$1;print}')
+foldername1=$(echo "$year - $album ($albumartist) [$media x$disctotal] $label [$catalognumber] $releasecountry" | tr '/' '~' | tr ':' '_' | tr '\n' ' ' | awk '{$1=$1;print}')
+foldername2=$(echo "$year - $album ($artist) [$media x$disctotal] $label [$catalognumber] $releasecountry" | tr '/' '~' | tr ':' '_' | tr '\n' ' ' | awk '{$1=$1;print}')
 
 
 #printf "${GREEN}* New album is:${NC}\n"

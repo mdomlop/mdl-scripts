@@ -6,13 +6,14 @@
 # Version 1 (2023-03-21)
 # - Requires: nothing special
 
-defconfigfile=~/.config/exportcam
+#defconfigfile=~/.config/camexport
+defconfigfile="$XDG_CONFIG_HOME/camexport"
 
 
 function help
 {
     cat <<EOF
-Usage:   exportcam [-c configfile [-a outdir] [-i inputdir] [-n] [-v] [-h]
+Usage:   camexport [-c configfile [-a outdir] [-i inputdir] [-n] [-v] [-h]
 
 Basic options:
  -c <configfile>   Use alternative configuration file
@@ -47,7 +48,7 @@ done
 
 test -z "$XDG_CONFIG_HOME" || XDG_CONFIG_HOME=$HOME/.config
 
-test -z "$configfile" && configfile=$XDG_CONFIG_HOME/exportcam
+test -z "$configfile" && configfile=$XDG_CONFIG_HOME/camexport
 
 #test -f "$configfile" && . "$configfile"
 test -f "$configfile" || error "Config file not exists: $configfile" && eval $(grep -E ^config_outdir= "$configfile")
@@ -78,6 +79,8 @@ cd "$inputdir" || error "Can't change to directory: $inputdir"
 test -d "$outdir" || error "Output directory not exits ($outdir)"
 
 
+pwd
+ls
 for i in ????????_?*.{jxl,jpg,jpeg,heif,png,webp,mp4,mkv,JXL,JPG,JPEG,HEIF,PNG,WEBP,MP4,MKV}
 do
     if [ ! -f "$i" ]
@@ -111,7 +114,8 @@ do
     if [ -z "$dryrun" ]
     then
         mkdir -pv "$savedir" &&
-        mv -iv "$i" "$savedir/" || echo "Failed to move $i to $savedir/$n"
+        #mv -iv "$i" "$savedir/" || echo "Failed to move $i to $savedir/$n"
+        mv -nv "$i" "$savedir/" || echo "Failed to move $i to $savedir/$n"
     else
         echo "(dryrun) mkdir -pv \"$savedir\"" &&
         echo "(dryrun) mv -iv \"$i\" \"$savedir/\""
